@@ -1,11 +1,10 @@
 <div align="center">
 
-# Better Capturing Interactions between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling
-
+<h1>Better Capturing Interactions between Products in Retail: <br/>Revisited Negative Sampling for <br/> Basket Choice Modeling</h1>
 
 Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup> and Emmanuel Malherbe<sup>2</sup>
 
-<sup>1</sup> <sub> Artefact Research Center </sub> <sup>2</sup> <sub>*MICS* - CentraleSupélec,</sub> 
+<sup>1</sup> <sub> [Artefact Research Center](https://www.artefact.com/technologies/artefact-research-center/) </sub> <sup>2</sup> <sub>[*MICS*](https://arcade.pages.centralesupelec.fr/) - CentraleSupélec,</sub> 
 
 </div>
 
