@@ -5,10 +5,9 @@ pytest==7.3.2
 pytest-cov
 pytest-xdist
 python-markdown-math
-python-markdown-math
 bandit==1.7.5
 nbstripout==0.6.1
 ipykernel==6.24.0
-typing==3.7.4.3
+typing>=3.7
 # Without the typing module, advanced type hints like list[str]
 # are not available on Python 3.8
