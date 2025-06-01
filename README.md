@@ -9,7 +9,9 @@ Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</s
 
 </div>
 
-# [![CI status](https://github.com/artefactory/alea-carta-est/actions/workflows/ci.yaml/badge.svg)](https://github.com/artefactory/alea-carta-est/actions/workflows/ci.yaml?query=branch%3Amain)
+#
+
+[![CI status](https://github.com/artefactory/alea-carta-est/actions/workflows/ci.yaml/badge.svg)](https://github.com/artefactory/alea-carta-est/actions/workflows/ci.yaml?query=branch%3Amain)
 [![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue.svg)]()
 
 [![Linting , formatting, imports sorting: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -18,9 +20,6 @@ Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</s
 </div>
 
 ## Table of Contents
-
-- [](#)
-- [](#-1)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
