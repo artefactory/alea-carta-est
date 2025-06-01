@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alea-carta-est"  # TODO: replace the repo name by yours in all variables
+authors = [
+  { name = "Jules Désir", email = "jules.desir@mines-paris.org" },
+  { name = "Vincent Auriau", email = "vincent.auriau@artefact.com" },
+]
+description = "Model 'alea-carta-est' introduced in the paper Désir et al. (2025)"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://github.com/artefactory/alea-carta-est"
+
+[tool.setuptools]
+packages = [
+  "lib",  # TODO: replace with your own project folders
+  "config",
+  "tests",
+] # TODO: replace with your own project values when needed
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+  ".bzr",
+  ".direnv",
+  ".eggs",
+  ".git",
+  ".ruff_cache",
+  ".svn",
+  ".tox",
+  ".venv",
+  "__pypackages__",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "node_modules",
+  "venv",
+]
+
+[tool.ruff.lint]
+select = [ # TODO: Your project should enable as many of these checks as possible
+  "E", # Checks for pycodestyles errors
+  "W", # Checks for pycodestyles warnings
+  "F", # Checks for pyflakes errors
+  "I", # Checks imports (isort)
+  "N", # Pep-8 Naming conventions
+  "D", # Docstrings
+  "ARG", # Unused arguments
+  "RET", # Flake8 return simplification rules
+  "RUF", # Ruff specific code quality rules
+  # "S",   # bandit security rules
+  # "ANN", # Flake8 annotation rules
+  # "PTH", # Flake8 recommendation to use pathlib
+  # "PD", # Pandas-vet pandas best practices linting
+  # "SIM", Common code simplifications
+] # See: https://beta.ruff.rs/docs/rules/
+ignore = ["D203", "D213", "ANN101", "ANN102", "PTH100", "PTH103", "PTH104", "PTH113", "PTH110", "PTH118", "PTH123", "E402"]
+
+[tool.ruff.lint.per-file-ignores]
+"*__init__.py" = ["D", "F401"]
+"tests/*" = ["D", "S"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint.isort]
+known-first-party = ["lib", "config", "tests"]    # TODO: replace with your own project folders
+
+[tool.bandit.assert_used]
+exclude_dirs = ["tests/"]
+
+[tool.pytest.ini_options]
+pythonpath = ["./"]
+testpaths = ["tests/"]
