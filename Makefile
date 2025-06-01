@@ -27,8 +27,3 @@ install_precommit:
 .PHONY: format
 format:
 	@pre-commit run -a
-
-# help: run_tests			- Run repository's tests
-.PHONY: run_tests
-run_tests:
-	@pytest tests/

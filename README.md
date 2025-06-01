@@ -8,7 +8,7 @@ Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</s
 <sup>1</sup> <sub> [Artefact Research Center](https://www.artefact.com/technologies/artefact-research-center/), </sub> <sup>2</sup> <sub>[*MICS*](https://arcade.pages.centralesupelec.fr/) - CentraleSupélec,</sub> <sup>3</sup> <sub> [Fortenova Grupa](https://fortenova.hr/en/home/groups-strength/) </sub>
 
 In [ECML-PKDD 2025](). <br>
-[[Full Paper]]()  [[Appendices]](./Appendices.pdf)  [[Oral Presentation]]()<br>
+[[Full Paper]](./paper.pdf)  [[Appendices]](./appendices.pdf)  [[Oral Presentation]]()<br>
 
 [![CI status](https://github.com/artefactory/alea-carta-est/actions/workflows/ci.yaml/badge.svg)](https://github.com/artefactory/alea-carta-est/actions/workflows/ci.yaml?query=branch%3Amain)
 [![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue.svg)]()
@@ -32,7 +32,7 @@ In [ECML-PKDD 2025](). <br>
 
 ## Installation
 
-To install the required packages in a virtual environment (see requirements.txt and requirements-developer.txt), run the following command:
+To install the required packages in a virtual environment (see *requirements.txt* and *requirements-developer.txt*), run the following command:
 
 ```bash
 make install
