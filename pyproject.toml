@@ -3,12 +3,12 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "alea-carta-est"  # TODO: replace the repo name by yours in all variables
+name = "alea-carta-est"
 authors = [
   { name = "Jules Désir", email = "jules.desir@mines-paris.org" },
   { name = "Vincent Auriau", email = "vincent.auriau@artefact.com" },
 ]
-description = "Model 'alea-carta-est' introduced in the paper Désir et al. (2025)"
+description = "Repository for the paper 'Better Capturing Interactions between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling'"
 version = "0.0.1"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -18,10 +18,8 @@ requires-python = ">=3.9"
 
 [tool.setuptools]
 packages = [
-  "lib",  # TODO: replace with your own project folders
-  "config",
-  "tests",
-] # TODO: replace with your own project values when needed
+  "alea_carta_est",
+]
 
 [tool.ruff]
 line-length = 100
@@ -45,7 +43,7 @@ exclude = [
 ]
 
 [tool.ruff.lint]
-select = [ # TODO: Your project should enable as many of these checks as possible
+select = [
   "E", # Checks for pycodestyles errors
   "W", # Checks for pycodestyles warnings
   "F", # Checks for pyflakes errors
@@ -74,7 +72,7 @@ convention = "numpy"
 quote-style = "double"
 
 [tool.ruff.lint.isort]
-known-first-party = ["lib", "config", "tests"]    # TODO: replace with your own project folders
+known-first-party = ["alea_carta_est"]
 
 [tool.bandit.assert_used]
 exclude_dirs = ["tests/"]
