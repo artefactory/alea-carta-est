@@ -1,6 +1,6 @@
-# 
+#
 <div align="center">
-  
+
 <h1>Better Capturing Interactions between Products in Retail: <br/>Revisited Negative Sampling for <br/> Basket Choice Modeling</h1>
 
 Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</sup> and Emmanuel Malherbe<sup>1</sup>
