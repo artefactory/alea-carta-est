@@ -85,6 +85,7 @@ TODO
 .
 ├── .github               <- GitHub Actions workflows
 ├── alea_carta_est        <- Python modules
+├── bin                   <- Bash files
 ├── doc                   <- Images for the repository
 └── notebooks             <- Jupyter notebooks
 ```
