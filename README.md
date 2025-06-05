@@ -8,6 +8,7 @@ Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</s
 <sup>1</sup> <sub> [Artefact Research Center](https://www.artefact.com/technologies/artefact-research-center/), </sub> <sup>2</sup> <sub>[*MICS*](https://arcade.pages.centralesupelec.fr/) - CentraleSupélec,</sub> <sup>3</sup> <sub> [Fortenova Grupa](https://fortenova.hr/en/home/groups-strength/) </sub>
 
 <img src="./doc/rs_img.png" height="90" /> 
+<img src="./doc/rs_img.png" height="90" /> 
 
 In [ECML-PKDD 2025](). <br>
 [[Full Paper]]()  [[Appendices]](./Appendices.pdf)  [[Oral Presentation]]()<br>
