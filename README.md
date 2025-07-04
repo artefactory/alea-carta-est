@@ -55,7 +55,7 @@ pip install -r requirements.txt
   <a href="https://www.universite-paris-saclay.fr/">
     <img src="https://raw.githubusercontent.com/artefactory/alea-carta-est/main/doc/logo_paris_saclay.png" height="65" />
   </a>
-  <a href="https://mics.centralesupelec.fr/">
+  <a href="https://fortenova.hr/en/home/">
     <img src="https://raw.githubusercontent.com/artefactory/alea-carta-est/main/doc/fortenova.png" height="65" />
   </a>
   &emsp;
