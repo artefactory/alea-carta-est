@@ -43,20 +43,20 @@ pip install -r requirements.txt
 
 <p align="center">
   <a href="https://www.artefact.com/data-consulting-transformation/artefact-research-center/">
-    <img src="./doc/logo_arc.png" height="60" />
+    <img src="https://raw.githubusercontent.com/artefactory/alea-carta-est/main/doc/logo_arc.png" height="60" />
   </a>
   &emsp;
   &emsp;
   <a href="https://mics.centralesupelec.fr/">
-    <img src="./doc/logo_CS.png" height="65" />
+    <img src="https://raw.githubusercontent.com/artefactory/alea-carta-est/main/doc/logo_CS.png" height="65" />
   </a>
   &emsp;
   &emsp;
   <a href="https://www.universite-paris-saclay.fr/">
-    <img src="./doc/logo_paris_saclay.png" height="65" />
+    <img src="https://raw.githubusercontent.com/artefactory/alea-carta-est/main/doc/logo_paris_saclay.png" height="65" />
   </a>
   <a href="https://mics.centralesupelec.fr/">
-    <img src="./doc/fortenova.png" height="65" />
+    <img src="https://raw.githubusercontent.com/artefactory/alea-carta-est/main/doc/fortenova.png" height="65" />
   </a>
   &emsp;
   &emsp;
