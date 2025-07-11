@@ -7,7 +7,7 @@ from tqdm import trange
 class SyntheticDataGenerator:
     def __init__(
         self,
-        items_nest: dict,
+        items_nest: dict, # keys should be integer: the nest number
         nests_interactions: list,
         proba_complementary_items: float = 0.7,
         proba_neutral_items: float = 0.15,
@@ -21,16 +21,6 @@ class SyntheticDataGenerator:
   
         self.items_nest = items_nest
         self.nests_interactions = nests_interactions
-        
-
-    def get_available_sets(self) -> list:
-        """Returns the available sets based on the current assortment."""
-
-        self.available_sets = list( # Not sure what it is supposed to do
-            key
-            for key, value in self.items_nest.items()
-            if value[0].intersection(self.assortment)
-        )
 
     def generate_basket(self) -> list:
         """Generates a basket of items based on the defined item sets and their relations."""
@@ -48,29 +38,30 @@ class SyntheticDataGenerator:
 
             basket = [first_item]
             first_key_index = first_nest
-            for key in self.available_sets:
-                relations = self.nests_interactions[key]
+            relations = self.nests_interactions[first_nest]
+            for nest_id, items in self.items_nest:
                 if (
-                    relations[first_key_index] == "compl"
+                    relations[nest_id] == "compl"
                     and np.random.random() < self.proba_complementary_items
                 ):
-                    basket.append(np.random.choice(list(nest)))
+                    basket.append(np.random.choice(items))
                 elif (
-                    relations[first_key_index] == "neutral"
+                    relations[nest_id] == "neutral"
                     and np.random.random() < self.proba_neutral_items
                 ):
-                    basket.append(np.random.choice(list(nest)))
+                    basket.append(np.random.choice(items))
             return basket
 
         def add_noise(basket: list) -> list:
             """Adds noise items to the basket based on the defined noise probability."""
             if np.random.random() < self.noise_proba:
                 possible_noisy_items = []
-                for nest, items in self.items_nest:
+                for nest, items in self.items_nest.items():
                     for item in items:
                         if item not in basket:
                             possible_noisy_items.append(item)
-                basket.append(np.random.choice(possible_noisy_items))
+                if len(possible_noisy_items) > 0:
+                    basket.append(np.random.choice(possible_noisy_items))
             return basket
 
         first_chosen_item, first_chosen_nest = select_first_item()
