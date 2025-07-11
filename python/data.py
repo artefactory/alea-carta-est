@@ -40,7 +40,7 @@ class SyntheticDataGenerator:
             """Selects the first item and its nest randomly from the available sets."""
 
             chosen_nest = np.random.choice(list(self.items_nest.keys()))
-            chosen_item = random.choice(list(self.items_nest[chosen_nest]))
+            chosen_item = np.random.choice(list(self.items_nest[chosen_nest]))
             return chosen_item, chosen_nest
 
         def complete_basket(first_item: int, first_nest: str) -> list:
@@ -52,7 +52,7 @@ class SyntheticDataGenerator:
                 relations = self.nests_interactions[key]
                 if (
                     relations[first_key_index] == "compl"
-                    and np.andom.random() < self.proba_complementary_items
+                    and np.random.random() < self.proba_complementary_items
                 ):
                     basket.append(np.random.choice(list(nest)))
                 elif (
@@ -79,7 +79,7 @@ class SyntheticDataGenerator:
 
         return basket
 
-    def generate_dataset(self, n_baskets) -> tf.Tensor:
+    def generate_dataset(self, n_baskets) -> np.ndarray:
         """Generates a dataset of baskets."""
 
         baskets = []
