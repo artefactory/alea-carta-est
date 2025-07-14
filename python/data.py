@@ -35,11 +35,9 @@ class SyntheticDataGenerator:
 
         def complete_basket(first_item: int, first_nest: str) -> list:
             """Completes the basket by adding items based on the relations of the first item."""
-
             basket = [first_item]
-            first_key_index = first_nest
             relations = self.nests_interactions[first_nest]
-            for nest_id, items in self.items_nest:
+            for nest_id, items in self.items_nest.items():
                 if (
                     relations[nest_id] == "compl"
                     and np.random.random() < self.proba_complementary_items
@@ -65,7 +63,7 @@ class SyntheticDataGenerator:
             return basket
 
         first_chosen_item, first_chosen_nest = select_first_item()
-        basket = complete_basket(first_chosen_item, first_chosen_nest)
+        basket = complete_basket(first_item=first_chosen_item, first_nest=first_chosen_nest)
         basket = add_noise(basket)
 
         return basket
