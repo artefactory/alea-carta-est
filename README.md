@@ -9,7 +9,7 @@ Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</s
 
 
 In [ECML-PKDD 2025](https://ecmlpkdd.org/2025/). <br>
-[[Full Paper]]()  [[Appendices]](./Appendices.pdf)  [[Oral Presentation]]()<br>
+[[Full Paper]](#)  [[Appendices]](./Appendices.pdf)  [[Oral Presentation]](#)<br>
 
 </div>
 
@@ -41,6 +41,47 @@ pip install -r requirements.txt
 
 # 🌿 Citation
 
+If you find our work or any of its feature useful for your research, consider starring the repository and citing our paper:
+
+<a href="https://ecmlpkdd.org/">
+<img align="left" width="100"src="https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/ECML_1_e012008d41.png" />
+</a>
+
+```bash
+@article{
+  doi = {},
+  url = {},
+  year = {},
+  publisher = {},
+  volume = {},
+  number = {},
+  pages = {},
+  author = {},
+  title = {},
+  journal = {} }
+```
+
+If you make use of the choice-learn library you also cite us:
+If you consider this package or any of its feature useful for your research, consider citing our [paper](https://joss.theoj.org/papers/10.21105/joss.06899):
+
+<a href="https://joss.theoj.org/papers/10.21105/joss.06899">
+<img align="left" width="100"src="https://github.com/openjournals/joss/blob/main/docs/logos/joss-logo.png?raw=true" />
+</a>
+
+```bash
+@article{Auriau2024,
+  doi = {10.21105/joss.06899},
+  url = {https://doi.org/10.21105/joss.06899},
+  year = {2024},
+  publisher = {The Open Journal},
+  volume = {9},
+  number = {101},
+  pages = {6899},
+  author = {Vincent Auriau and Ali Aouad and Antoine Désir and Emmanuel Malherbe},
+  title = {Choice-Learn: Large-scale choice modeling for operational contexts through the lens of machine learning},
+  journal = {Journal of Open Source Software} }
+```
+
 <p align="center">
   <a href="https://www.artefact.com/data-consulting-transformation/artefact-research-center/">
     <img src="https://raw.githubusercontent.com/artefactory/alea-carta-est/main/doc/logo_arc.png" height="60" />
@@ -64,3 +105,4 @@ pip install -r requirements.txt
 
 
 ## License
+The use of this software is under the MIT license, with no limitation of usage, including for commercial applications.
