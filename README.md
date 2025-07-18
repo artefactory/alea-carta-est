@@ -38,7 +38,18 @@ pip install -r requirements.txt
 # 🌿 Synthetic Experiments
 
 # 🌿 Train the model on your own dataset
+You can train the model on your own dataset once it is instantiated as a ```TripDataset``` with:
+```python
+from choice_learn.basket_models import AleaCarta
 
+dataset = your_own_dataset()
+
+model = AleaCarta()
+model.fit(data)
+```
+You can check the [notebook](./notebooks/train_on_your_own_data.ipynb)[![Open In Colab](https://img.shields.io/badge/-grey?logo=googlecolab)](https://colab.research.google.com/github/artefactory/alea-carta-est/blob/main/notebooks/train_on_your_own_data.ipynb)
+
+You can also check [choice-learn](https://github.com/artefactory/choice-learn/blob/main/notebooks/basket_models/alea_carta.ipynb) and its [documentation](https://artefactory.github.io/choice-learn/references/basket_models/references_shopper/) or contact us if you have any question.
 # 🌿 Citation
 
 If you find our work or any of its feature useful for your research, consider starring the repository and citing our paper:
