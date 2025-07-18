@@ -72,3 +72,6 @@ quote-style = "double"
 
 [tool.ruff.lint.isort]
 known-first-party = ["alea_carta_est"]
+
+[tool.bandit]
+exclude = "/doc"
