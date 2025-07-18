@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "alea-carta-est"
 authors = [
-  { name = "Jules Désir", email = "jules.desir@mines-paris.org" },
+  { name = "Jules Désir", email = "jules.desir@artefact.com" },
   { name = "Vincent Auriau", email = "vincent.auriau@artefact.com" },
 ]
 description = "Repository for the paper 'Better Capturing Interactions between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling'"
