@@ -30,6 +30,6 @@ repos:
         name: Security check (bandit)
         entry: bandit
         types: [python]
-        args: ["-c", "pyproject.toml", "-x", "tests", --recursive, lib]  # TODO: replace "lib" with the name of your folder
+        args: ["-c", "pyproject.toml", "-x", "tests", "--recursive", "python"]  # TODO: replace "lib" with the name of your folder
         language: system
 exclude: ^(.svn|CVS|.bzr|.hg|.git|__pycache__|.tox|.ipynb_checkpoints|assets|tests/assets/|venv/|.venv/)
