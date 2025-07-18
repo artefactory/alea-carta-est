@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alea-carta-est"
+authors = [
+  { name = "Jules Désir", email = "jules.desir@artefact.com" },
+  { name = "Vincent Auriau", email = "vincent.auriau@artefact.com" },
+]
+description = "Repository for the paper 'Better Capturing Interactions between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling'"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://github.com/artefactory/alea-carta-est"
+
+[tool.setuptools]
+packages = [
+  "alea_carta_est",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+  ".bzr",
+  ".direnv",
+  ".eggs",
+  ".git",
+  ".ruff_cache",
+  ".svn",
+  ".tox",
+  ".venv",
+  "__pypackages__",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "node_modules",
+  "venv",
+]
+
+[tool.ruff.lint]
+select = [
+  "E", # Checks for pycodestyles errors
+  "W", # Checks for pycodestyles warnings
+  "F", # Checks for pyflakes errors
+  "I", # Checks imports (isort)
+  "N", # Pep-8 Naming conventions
+  "D", # Docstrings
+  "ARG", # Unused arguments
+  "RET", # Flake8 return simplification rules
+  "RUF", # Ruff specific code quality rules
+  # "S",   # bandit security rules
+  # "ANN", # Flake8 annotation rules
+  # "PTH", # Flake8 recommendation to use pathlib
+  # "PD", # Pandas-vet pandas best practices linting
+  # "SIM", Common code simplifications
+] # See: https://beta.ruff.rs/docs/rules/
+ignore = ["D203", "D213", "ANN101", "ANN102", "PTH100", "PTH103", "PTH104", "PTH113", "PTH110", "PTH118", "PTH123", "E402"]
+
+[tool.ruff.lint.per-file-ignores]
+"*__init__.py" = ["D", "F401"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint.isort]
+known-first-party = ["alea_carta_est"]
+
+[tool.bandit]
+exclude = "/doc"

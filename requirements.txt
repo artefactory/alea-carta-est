@@ -1,1 +1,2 @@
 choice-learn
+matplotlib
