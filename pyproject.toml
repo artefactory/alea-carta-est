@@ -18,7 +18,7 @@ requires-python = ">=3.9"
 
 [tool.setuptools]
 packages = [
-  "alea_carta_est",
+  "python",
 ]
 
 [tool.ruff]
@@ -74,4 +74,4 @@ quote-style = "double"
 known-first-party = ["alea_carta_est"]
 
 [tool.bandit]
-exclude = "/doc"
+exclude_dirs = ["doc"]

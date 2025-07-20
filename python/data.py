@@ -65,7 +65,5 @@ class SyntheticDataGenerator:
 
     def generate_dataset(self, n_baskets) -> np.ndarray:
         """Generate a dataset of baskets."""
-        baskets = []
-        for _ in range(n_baskets):
-            baskets.append(self.generate_basket())
+        baskets = [self.generate_basket() for _ in range(n_baskets)]
         return np.array(baskets, dtype=object)
