@@ -45,7 +45,7 @@ from choice_learn.basket_models import AleaCarta
 dataset = your_own_dataset()
 
 model = AleaCarta()
-model.fit(data)
+model.fit(dataset)
 ```
 You can check the [notebook](./notebooks/train_on_your_own_data.ipynb)[![Open In Colab](https://img.shields.io/badge/-grey?logo=googlecolab)](https://colab.research.google.com/github/artefactory/alea-carta-est/blob/main/notebooks/train_on_your_own_data.ipynb)
 
