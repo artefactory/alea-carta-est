@@ -53,7 +53,7 @@ for purchased_basket, prices, assortment in zip(*your_own_dataset):
     assortment=assortment))
 dataset = TripDataset(trips=customer_trips)
 
-
+# Instantiate and train the model
 model = AleaCarta(
   latent_sizes = {"preferences": 8, "price": 4, "season": 4},
   n_negative_samples=4,
