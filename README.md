@@ -37,17 +37,33 @@ pip install -r requirements.txt
 
 # 🌿 Synthetic Experiments
 
+The synthetic experiments can be run using this [notebook](./notebooks/synthetic_experiments.ipynb).
+
 # 🌿 Train the model on your own dataset
 You can train the model on your own dataset once it is instantiated as a ```TripDataset``` with:
 ```python
-from choice_learn.basket_models import AleaCarta
+from choice_learn.basket_models import AleaCarta, TripDataset, Trip
 
-dataset = your_own_dataset()
+# Transform the basket data in Trips
+customers_trips = []
+for purchased_basket, prices, assortment in zip(*your_own_dataset):
+  customer_trips.append(Trip(
+    purchases=purchased_basket,
+    prices=prices,
+    assortment=assortment))
+dataset = TripDataset(trips=customer_trips)
 
-model = AleaCarta()
+
+model = AleaCarta(
+  latent_sizes = {"preferences": 8, "price": 4, "season": 4},
+  n_negative_samples=4,
+  lr=1e-4,
+  epochs=128,
+  batch_size=64
+)
 model.fit(dataset)
 ```
-You can check the [notebook](./notebooks/train_on_your_own_data.ipynb)[![Open In Colab](https://img.shields.io/badge/-grey?logo=googlecolab)](https://colab.research.google.com/github/artefactory/alea-carta-est/blob/main/notebooks/train_on_your_own_data.ipynb)
+You can check the [notebook](./notebooks/train_on_your_own_data.ipynb) or directly open in Colab [![Open In Colab](https://img.shields.io/badge/-grey?logo=googlecolab)](https://colab.research.google.com/github/artefactory/alea-carta-est/blob/main/notebooks/train_on_your_own_data.ipynb).
 
 You can also check [choice-learn](https://github.com/artefactory/choice-learn/blob/main/notebooks/basket_models/alea_carta.ipynb) and its [documentation](https://artefactory.github.io/choice-learn/references/basket_models/references_shopper/) or contact us if you have any question.
 # 🌿 Citation
@@ -59,16 +75,16 @@ If you find our work or any of its feature useful for your research, consider st
 </a>
 
 ```bash
-@article{
+@article{Desir2025
   doi = {},
   url = {},
-  year = {},
+  year = {2025},
   publisher = {},
   volume = {},
   number = {},
   pages = {},
-  author = {},
-  title = {},
+  author = {Jules Désir and Vincent Auriau and Martin Možina and Emmanuel Malherbe},
+  title = {Better Capturing Interactions between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling},
   journal = {} }
 ```
 
