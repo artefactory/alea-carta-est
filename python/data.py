@@ -51,7 +51,7 @@ class SyntheticDataGenerator:
             """Add noise items to the basket based on the defined noise probability."""
             if np.random.random() < self.noise_proba:
                 possible_noisy_items = []
-                for nest, items in self.items_nest.items():
+                for _, items in self.items_nest.items():
                     for item in items:
                         if item not in basket:
                             possible_noisy_items.append(item)

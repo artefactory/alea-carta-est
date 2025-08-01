@@ -63,7 +63,7 @@ model = AleaCarta(
 )
 model.fit(dataset)
 ```
-You can check the [notebook](./notebooks/train_on_your_own_data.ipynb) or directly open in Colab [![Open In Colab](https://img.shields.io/badge/-grey?logo=googlecolab)](https://colab.research.google.com/github/artefactory/alea-carta-est/blob/main/notebooks/train_on_your_own_data.ipynb).
+Get started with this [notebook](./notebooks/train_on_your_own_data.ipynb) or directly open in Colab [![Open In Colab](https://img.shields.io/badge/-grey?logo=googlecolab)](https://colab.research.google.com/github/artefactory/alea-carta-est/blob/main/notebooks/train_on_your_own_data.ipynb).
 
 You can also check [choice-learn](https://github.com/artefactory/choice-learn/blob/main/notebooks/basket_models/alea_carta.ipynb) and its [documentation](https://artefactory.github.io/choice-learn/references/basket_models/references_shopper/) or contact us if you have any question.
 # 🌿 Citation
