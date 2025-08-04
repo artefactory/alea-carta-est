@@ -9,7 +9,7 @@ Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</s
 
 
 In [ECML-PKDD 2025](https://ecmlpkdd.org/2025/). <br>
-[[Full Paper]](#)  [[Appendices]](./Appendices.pdf)  [[Oral Presentation]](#)<br>
+[[Full Paper]](https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/preprints/2025/ads/preprint_ecml_pkdd_2025_ads_1198.pdf)  [[Appendices]](./Appendices.pdf)  [[Oral Presentation]](#)<br>
 
 </div>
 
