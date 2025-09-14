@@ -23,7 +23,7 @@ First you can clone the repository:
 git clone git@github.com:artefactory/alea-carta-est.git
 ```
 
-To import and train the models you will need the [choice-learn](https://github.com/artefactory/choice-learn) library. You can pip install it:
+The *AleaCarta* model is part of the [choice-learn](https://github.com/artefactory/choice-learn) library that you will need to import. You can pip install it:
 
 ```bash
 pip install choice-learn
