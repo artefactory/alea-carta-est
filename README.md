@@ -75,17 +75,15 @@ If you find our work or any of its feature useful for your research, consider st
 </a>
 
 ```bash
-@article{Desir2025
-  doi = {},
-  url = {},
-  year = {2025},
-  publisher = {},
-  volume = {},
-  number = {},
-  pages = {},
-  author = {Jules Désir and Vincent Auriau and Martin Možina and Emmanuel Malherbe},
+@inproceedings{Desir2025
+  doi = {10.1007/978-3-032-06118-8_8},
+  url = {https://doi.org/10.1007/978-3-032-06118-8_8},
+  publisher = {Springer Nature Switzerland},
+  author = {Jules D{\'e}sir and Vincent Auriau and Martin Mo{\v{z}}ina and Emmanuel Malherbe},
   title = {Better Capturing Interactions between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling},
-  journal = {} }
+  booktitle={Machine Learning and Knowledge Discovery in Databases. ECML PKDD 2025.},
+  year={2026}
+}
 ```
 
 If you make use of the choice-learn library you also cite us:
