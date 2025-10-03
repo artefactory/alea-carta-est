@@ -5,7 +5,7 @@
 
 Jules Désir<sup>1</sup>, Vincent Auriau<sup>1, 2</sup>, Martin Možina<sup>3</sup> and Emmanuel Malherbe<sup>1</sup>
 
-<sup>1</sup> <sub> [Artefact Research Center](https://www.artefact.com/technologies/artefact-research-center/), </sub> <sup>2</sup> <sub>[*MICS*](https://arcade.pages.centralesupelec.fr/) - CentraleSupélec,</sub> <sup>3</sup> <sub> [Fortenova Grupa](https://fortenova.hr/en/home/groups-strength/) </sub>
+<sup>1</sup> <sub> [Artefact Research Center](https://www.artefact.com/technologies/artefact-research-center/), </sub> <sup>2</sup> <sub>[*MICS*](https://arcade.pages.centralesupelec.fr/) - CentraleSupélec,</sub> <sup>3</sup> <sub> [Fortenova Group](https://fortenova.hr/en/home/groups-strength/) </sub>
 
 
 In [ECML-PKDD 2025](https://ecmlpkdd.org/2025/). <br>
@@ -75,17 +75,15 @@ If you find our work or any of its feature useful for your research, consider st
 </a>
 
 ```bash
-@article{Desir2025
-  doi = {},
-  url = {},
-  year = {2025},
-  publisher = {},
-  volume = {},
-  number = {},
-  pages = {},
-  author = {Jules Désir and Vincent Auriau and Martin Možina and Emmanuel Malherbe},
+@inproceedings{Desir2025
+  doi = {10.1007/978-3-032-06118-8_8},
+  url = {https://doi.org/10.1007/978-3-032-06118-8_8},
+  publisher = {Springer Nature Switzerland},
+  author = {Jules D{\'e}sir and Vincent Auriau and Martin Mo{\v{z}}ina and Emmanuel Malherbe},
   title = {Better Capturing Interactions between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling},
-  journal = {} }
+  booktitle={Machine Learning and Knowledge Discovery in Databases. ECML PKDD 2025.},
+  year={2026}
+}
 ```
 
 If you make use of the choice-learn library you also cite us:
