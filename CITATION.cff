@@ -2,9 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: AleaCarta
-message: >-
-  Better Capturing Interactions Between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling
+title: Better Capturing Interactions Between Products in Retail: Revisited Negative Sampling for Basket Choice Modeling
 authors:
   - given-names: Jules
     family-names: Désir
